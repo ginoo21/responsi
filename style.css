@@ -1,0 +1,136 @@
+body {
+  font-family: "Arial", sans-serif;
+  padding-top: 56px;
+  background-color: #121212; /* Gaya background utama */
+  color: #ffffff; /* Warna teks untuk kontras */
+}
+
+.hero {
+  background-image: url(https://i.pinimg.com/originals/d0/0c/60/d00c60a369aca73e7b488645aea8f5c6.gif); /* Ganti dengan background baru */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efek parallax */
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar {
+  background-color: rgba(18, 18, 18, 0.8); /* Navbar transparan */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: rgba(33, 37, 41, 0.9) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  background-color: #706e6e; /* Warna progres bar */
+  transition: width 1.5s ease-in-out;
+}
+
+.card {
+  background-color:#706e6e ;
+  color: #f0eded; /* Warna teks kartu */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#skills .progress {
+  background-color: #c2c3c5; /* Warna progres */
+  height: 25px;
+  margin-bottom: 1rem;
+}
+  #skills {
+    background-color: #cac4c4; /* Latar belakang hitam */
+    padding: 2rem 0;
+    color: rgb(3, 3, 3); /* Warna teks putih */
+  }
+
+#projects .card {
+  height: 100%;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #1e1e1e; /* Warna latar belakang formulir */
+  padding: 20px;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+#contact {
+  background-color: #121212; /* Latar belakang hitam */
+  padding: 2rem 0;
+  color: rgb(29, 23, 23); /* Warna teks putih */
+}
+
+#contact form {
+  background-image: url(https://i.pinimg.com/originals/d0/0c/60/d00c60a369aca73e7b488645aea8f5c6.gif); /* Warna gelap untuk form */
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+
+footer {
+  margin-top: 2rem;
+  background-color: #27b31a; /* Warna footer */
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Animasi tambahan untuk AOS */
+[data-aos] {
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Gaya untuk tombol unduh CV */
+.navbar-nav .nav-link[download] {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: rgb(173, 174, 175);
+  transition: background-color 0.3s ease;
+}
+
+
+/* Gaya untuk modal */
+.modal-content {
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.modal-header {
+  background-color: #2c2c2c;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  background-color: #2c2c2c;
+  border-top: 1px solid #dee2e6;
+}
